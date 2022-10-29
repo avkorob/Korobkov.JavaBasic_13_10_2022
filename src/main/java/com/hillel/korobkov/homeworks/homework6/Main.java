@@ -118,8 +118,6 @@ public class Main {
         int result1 = (frag11 + frag12 + frag13 + frag14 + frag15) / 5;
         int result2 = (frag21 + frag22 + frag23 + frag24 + frag25) / 5;
 
-//        System.out.println(result1);
-//        System.out.println(result2);
         System.out.println();
         System.out.println();
 

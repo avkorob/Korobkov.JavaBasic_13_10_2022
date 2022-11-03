@@ -116,15 +116,6 @@ public class Main {
         double result1 = (frag11 + frag12 + frag13 + frag14 + frag15) / 5.0;
         double result2 = (frag21 + frag22 + frag23 + frag24 + frag25) / 5.0;
 
-//        System.out.println();
-//        System.out.println();
-//
-//        System.out.println(result1);
-//        System.out.println(result2);
-//
-//        System.out.println();
-//        System.out.println();
-
         System.out.println("Результати гри:");
         if (result1 > result2) {
             System.out.println("Перемогла команда: " + name1 + ", набрала: " + result1 + " очка(ів)");
@@ -132,7 +123,5 @@ public class Main {
             System.out.println("Перемогла команда: " + name2 + ", набрала: " + result2 + " очка(ів)");
         } else
             System.out.println("Нічия, перемогла дружба!!!");
-
-
     }
 }

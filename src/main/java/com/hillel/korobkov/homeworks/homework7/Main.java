@@ -1,7 +1,5 @@
 package com.hillel.korobkov.homeworks.homework7;
-
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
 
@@ -9,10 +7,14 @@ public class Main {
 //        Користувач повинен мати можливість вгадувати в кілька спроб (мінімум 3).
 
         int userNumber, unknownNumber;
+
         unknownNumber = (int) (Math.random() * 10) + 1;
+
         System.out.println(unknownNumber);
         System.out.println("Комп'ютер загадав число від 0 до 10! Спробуй вгадати!");
-        System.out.println("Введи число від 0 до 10! (У тебе є три спроби):");
+        System.out.println();
+        System.out.print("Введи число від 0 до 10! (У тебе є три спроби): ");
+
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
@@ -22,25 +24,29 @@ public class Main {
                 if (userNumber == unknownNumber) {
                     System.out.println("Вітаю! Ти вгадав, компь'ютер загадав число: " + unknownNumber);
                     break;
-                } else {
-                    System.out.println("Ти не вгадав! У тебе залишилось 2 спроби! ");
+                } else if (userNumber != unknownNumber) {
+                    System.out.print("Ти не вгадав! У тебе залишилось 2 спроби! Введи число: ");
                 }
             } else {
                 System.out.println("Помилка! Необхідно число від 0 до 10!");
                 scanner.nextLine();
             }
+
+
             if (scanner.hasNextInt()) {
                 userNumber = scanner.nextInt();
                 if (userNumber == unknownNumber) {
                     System.out.println("Вітаю! Ти вгадав, компь'ютер загадав число: " + unknownNumber);
                     break;
                 } else {
-                    System.out.println("Ти не вгадав! У тебе залишилось 1 спроба! ");
+                    System.out.print("Ти не вгадав! У тебе залишилось 1 спроба! Введи число: ");
                 }
             } else {
                 System.out.println("Помилка! Необхідно число від 0 до 10!");
                 scanner.nextLine();
             }
+
+
             if (scanner.hasNextInt()) {
                 userNumber = scanner.nextInt();
                 if (userNumber == unknownNumber) {

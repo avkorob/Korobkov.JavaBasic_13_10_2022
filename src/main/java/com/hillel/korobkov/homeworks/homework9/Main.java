@@ -9,30 +9,22 @@ public class Main {
 //        Виведіть у двох рядках вік гравців кожної команди.
 //        Порахуйте середній вік гравців кожної команди та виведіть на екран.
 
-        int[] team1 = new int[25];
-        int[] team2 = new int[25];
+        final int counter = 25;
+        int[] team1 = new int[counter];
+        int[] team2 = new int[counter];
+        double sum1 = 0;
+        double sum2 = 0;
 
-        for (int i = 0; i < team1.length; i++) {
+        for (int i = 0; i < counter; i++) {
             team1[i] = (int) (18 + (Math.random() * 23));
+            team2[i] = (int) (18 + (Math.random() * 23));
+            sum1 += team1[i];
+            sum2 += team2[i];
         }
         System.out.println(Arrays.toString(team1));
-        for (int i = 0; i < team2.length; i++) {
-            team2[i] = (int) (18 + (Math.random() * 23));
-        }
         System.out.println(Arrays.toString(team2));
-
-        int sum1 = 0;
-        int sum2 = 0;
-
-        for (int j : team1) {
-            sum1 = sum1 + j;
-        }
-        System.out.println("середній вік гравців першої команди  : " + (sum1 / team1.length));
-
-        for (int i = 0; i < team2.length; i++) {
-            sum2 = sum2 + team2[i];
-        }
-        System.out.println("середній вік гравців другої команди  : " + (sum2 / team2.length));
+        System.out.println("середній вік гравців першої команди  : " + (sum1 / counter));
+        System.out.print("середній вік гравців другої команди  : " + (sum2 / counter));
 
     }
 }

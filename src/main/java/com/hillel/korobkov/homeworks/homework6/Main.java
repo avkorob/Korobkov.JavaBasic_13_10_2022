@@ -11,6 +11,7 @@ public class Main {
         int frag13 = 0;
         int frag14 = 0;
         int frag15 = 0;
+
         int frag21 = 0;
         int frag22 = 0;
         int frag23 = 0;

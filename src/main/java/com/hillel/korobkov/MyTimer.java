@@ -16,7 +16,7 @@ public class MyTimer {
 
         jframe.setLayout(new FlowLayout());
         jframe.setTitle("Java Base");
-        jframe.setBounds(500, 300, 400, 100);
+        jframe.setBounds(1000, 500, 400, 100);
         jframe.add(jLabelBreak);
         jframe.add(jLabel);
         jframe.setVisible(true);
